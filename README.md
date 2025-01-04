@@ -1,4 +1,4 @@
-# VirReassort: a tool to identify Virus Reassortment
+# VReassort: a tool to identify Virus Reassortment
 
 ### Citation
 
