@@ -8,7 +8,7 @@
 * Python >=3.10.18
 * MAFFT==7.525
 * TrimAl==1.5.0
-* FastTree==2.1.11 [FastTreeMP](https://morgannprice.github.io/fasttree/)
+* [FastTreeMP](https://morgannprice.github.io/fasttree/)==2.1.11
 * Dendropy==5.0.1
 * ETE3==3.1.3
 * Pytorch>=2.2.2
