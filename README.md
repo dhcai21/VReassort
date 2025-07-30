@@ -16,8 +16,9 @@
 * torch>=2.2.2
 
 #### Supporting Platfroms
+[![Anaconda-Server Badge](https://anaconda.org/dhcai21/vreassort/badges/platforms.svg)](https://anaconda.org/dhcai21/vreassort)
 * Linux
-* Mac [![Anaconda-Server Badge](https://anaconda.org/dhcai21/vreassort/badges/platforms.svg)](https://anaconda.org/dhcai21/vreassort)
+* Mac 
 
 
 #### Installation via Conda
