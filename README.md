@@ -46,6 +46,7 @@ python src/main.py --
 
 ## Input
 Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
+> ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
 `Example (2 segments)`
 
 | Segment | Path              |
@@ -53,7 +54,6 @@ Please use the file `input.csv` to indicate the segment names and the paths to t
 | HA      | data/seg4.fasta  |
 | NA      | data/seg6.fasta  |
 
-**Note:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
 
 ## Output
 
