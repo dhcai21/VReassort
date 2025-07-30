@@ -64,6 +64,23 @@ Please modify the file `input.csv` to indicate the segment names and the paths t
 
 > ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
 
+```
+**seg4.fasta**
+>Strain1 | segment 4
+ACGTATCTACGACGT 
+>Strain2 | segment 4
+ACGTACGTTCTACTC
+...
+
+**seg6.fasta**
+>Strain1 | segment 6
+ACGTTCTACACGT
+>Strain2 | segment 6
+ACGTACTCTACGT
+...
+```
+
+
 ## Output
 
 ```
