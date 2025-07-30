@@ -2,9 +2,6 @@
 
 ### E-mail: dhcai2@cityu.edu.hk
 
-## Supporting Platfroms
-* Linux
-* Mac
 
 
 ## Installation
@@ -17,6 +14,10 @@
 * Dendropy==5.0.1
 * ETE3==3.1.3
 * Pytorch>=2.2.2
+
+#### Supporting Platfroms
+* Linux
+* Mac
 
 
 #### Installation via Conda
