@@ -39,15 +39,16 @@ chmod +x src/*
 
 ## Usage
 #### Example
-python src/main.py --input.csv --out result --thread 8
+`python src/main.py --input.csv --out result --thread 8`
 
+```
 result/
 ├── fasta/
 ├── feature/
 ├── identification/
 ├── name_mapping.csv
 └── tree/
-
+```
 
 ## Input
 Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
