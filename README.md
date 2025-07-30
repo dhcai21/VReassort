@@ -45,7 +45,7 @@ chmod +x src/*
 
 ## Usage
 #### Example
-`python src/vreassort.py --input.csv --out result --thread 8`
+`python vreassort.py --input.csv --out result --thread 8`
 
 If you install VReassort va Conda, you may use:
 `python vreassort.py --input.csv --out result --thread 8`
