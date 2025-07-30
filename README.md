@@ -47,6 +47,10 @@ chmod +x src/*
 #### Example
 `python vreassort.py --input --input.csv --out result --thread 8`
 
+if you install VReassort via Conda, you may use:
+
+`vreassort --input --input.csv --out result --thread 8`
+
 ## Input
 Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
 > ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
