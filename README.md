@@ -5,7 +5,7 @@
 
 
 ## Installation
-### Main Dependencies:
+#### Main Dependencies:
 * Conda
 * Python >=3.10.18
 * MAFFT==7.525
