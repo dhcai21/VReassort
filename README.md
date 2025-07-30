@@ -8,7 +8,7 @@
 * Python >=3.10.18
 * MAFFT==7.525
 * TrimAl==1.5.0
-* FastTree==2.1.11
+* FastTree==2.1.11[FastTreeMP](https://morgannprice.github.io/fasttree/)
 * Dendropy==5.0.1
 * ETE3==3.1.3
 * Pytorch>=2.2.2
@@ -34,7 +34,6 @@ pip install torch==2.2.2 numpy==1.24.4 pandas ete3==3.1.3 dendropy==5.0.1 Bio sc
 git clone https://github.com/dhcai21/VReassort.git
 cd VReassort
 chmod +x src/*
-
 ```
 
 ## Usage
