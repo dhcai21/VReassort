@@ -17,7 +17,7 @@
 
 #### Supporting Platfroms
 * Linux
-* Mac
+* Mac [![Anaconda-Server Badge](https://anaconda.org/dhcai21/vreassort/badges/platforms.svg)](https://anaconda.org/dhcai21/vreassort)
 
 
 #### Installation via Conda
