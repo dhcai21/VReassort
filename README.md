@@ -39,9 +39,14 @@ chmod +x src/*
 
 ## Usage
 #### Example
-python src/main.py --
+python src/main.py --input.csv --out result --thread 8
 
-
+result/
+├── fasta/
+├── feature/
+├── identification/
+├── name_mapping.csv
+└── tree/
 
 
 ## Input
