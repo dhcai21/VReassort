@@ -1,8 +1,6 @@
 # VReassort: a tool to identify Virus Reassortment
 
-### Citation
-
-### E-mail: dhcai2-c@my.cityu.edu.hk
+### E-mail: dhcai2@cityu.edu.hk
 
 ## Installation
 ### Dependencies:
@@ -11,10 +9,15 @@
 * samtools >= 1.4.1
 
 
-### An easiler way to install
-After cloning this respository, you can use anaconda to install the **rvhaplo.yaml** (Linux). This will install all packages you need. The command is: `conda env create -f rvhaplo.yaml -n rvhaplo`
+#### Installation using conda
 
-#### An optional way to install
+#### 
 ```
 
+
+
 ```
+
+
+## 📘&nbsp; License
+VReassort is released under the terms of the [GPL v3.0 License](https://github.com/dhcai2/VReassort?tab=GPL-3.0-1-ov-file).
