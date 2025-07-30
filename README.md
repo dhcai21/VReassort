@@ -73,7 +73,7 @@ result/
 
 #### Name Mapping
 To ensure consistency in sequence names across segments, we use pseudo-names (Code) to replace the original names of the segment sequences. The `name_mapping.csv` file provides the relevant information.
-`Example`
+`Example: name_mapping.csv`
 
 | Code | HA   | NA   |
 |------|------|------|
@@ -86,8 +86,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 
 
 #### Identification 
-`Example`
-`HA_NA_leaf.csv'
+`Example: HA_NA_leaf.csv'
 | Score     | S1         | S2         | Name  |
 |-----------|------------|------------|-------|
 | 0.000439  | 0.000524   | 0.000354   | S103  |
@@ -98,8 +97,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 | 0.989963  | 0.979926   | 0.999999   | S98   |
 | ...       | ...        | ...        | ...   |
 
-`Example`
-`HA_NA_clade.csv`
+`Example: HA_NA_clade.csv`
 | Score      | S1         | S2         | Name   | Extra Info |
 |------------|------------|------------|--------|------------|
 | 0.00863296 | 0.00587875 | 0.01138717 | clade0 | ...        |
