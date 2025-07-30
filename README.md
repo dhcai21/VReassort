@@ -45,7 +45,7 @@ chmod +x src/*
 
 ## Usage
 #### Example
-`python vreassort.py --input.csv --out result --thread 8`
+`python vreassort.py --input --input.csv --out result --thread 8`
 
 ## Input
 Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
