@@ -13,7 +13,7 @@
 * [FastTreeMP](https://morgannprice.github.io/fasttree/)==2.1.11
 * Dendropy==5.0.1
 * ETE3==3.1.3
-* torch>=2.2.2
+* Pytorch
 
 #### Supporting Platfroms
 * Linux
