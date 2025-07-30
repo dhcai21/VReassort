@@ -51,13 +51,13 @@ Please use the file `input.csv` to indicate the segment names and the paths to t
 > ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
 
 
-`Example (2 segments)`
+`Example`
 
-| Segment | Path              |
-|---------|-------------------|
+| Segment | Path                  |
+|---------|-----------------------|
 | HA      | test_data/seg4.fasta  |
 | NA      | test_data/seg6.fasta  |
-
+| ...     | ...                   |
 
 ## Output
 
@@ -75,15 +75,14 @@ result/
 To ensure consistency in sequence names across segments, we use pseudo-names (Code) to replace the original names of the segment sequences. The `name_mapping.csv` file provides the relevant information.
 `Example: name_mapping.csv`
 
-| Code | HA   | NA   |
-|------|------|------|
-| S1   | F0   | F0   |
-| S2   | F1   | F1   |
-| S3   | F2   | F2   |
-| S4   | F3   | F3   |
-| S5   | F4   | F4   |
-| ...  | ...  | ...  |
-
+| Name | HA   | NA   | ...  |
+|------|------|------|------|
+| S1   | F0   | F0   | ...  |
+| S2   | F1   | F1   | ...  |
+| S3   | F2   | F2   | ...  |
+| S4   | F3   | F3   | ...  |
+| S5   | F4   | F4   | ...  |
+| ...  | ...  | ...  | ...  |
 
 #### Identification 
 `Example: HA_NA_leaf.csv'
