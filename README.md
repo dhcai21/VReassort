@@ -61,7 +61,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 
 #### Identification 
 
-HA_NA_leaf.csv
+`HA_NA_leaf.csv'
 | Score     | S1         | S2         | Name  |
 |-----------|------------|------------|-------|
 | 0.000439  | 0.000524   | 0.000354   | S103  |
@@ -72,7 +72,7 @@ HA_NA_leaf.csv
 | 0.989963  | 0.979926   | 0.999999   | S98   |
 | ...       | ...        | ...        | ...   |
 
-HA_NA_clade.csv
+`HA_NA_clade.csv'
 | Score      | S1         | S2         | Name   | Extra Info |
 |------------|------------|------------|--------|------------|
 | 0.00863296 | 0.00587875 | 0.01138717 | clade0 | ...        |
