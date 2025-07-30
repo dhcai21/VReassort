@@ -85,7 +85,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 | ...  | ...  | ...  | ...  |
 
 #### Identification 
-`Example: HA_NA_leaf.csv'
+`Example: HA_NA_leaf.csv`
 | Score     | S1         | S2         | Name  |
 |-----------|------------|------------|-------|
 | 0.000439  | 0.000524   | 0.000354   | S103  |
@@ -108,6 +108,8 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 | 0.00484115 | 0.00183183 | 0.00785047 | clade6 | ...        |
 | 0.02662343 | 0.02405226 | 0.02919459 | clade7 | ...        |
 | ...        | ...        | ...        | ...    | ...        |
+
+Note: Only clades with sizes between 5 to 150 are reported.
 
 
 
