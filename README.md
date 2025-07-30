@@ -59,8 +59,8 @@ Please use the file `input.csv` to indicate the segment names and the paths to t
 
 | Segment | Path              |
 |---------|-------------------|
-| HA      | data/seg4.fasta  |
-| NA      | data/seg6.fasta  |
+| HA      | test_data/seg4.fasta  |
+| NA      | test_data/seg6.fasta  |
 
 
 ## Output
