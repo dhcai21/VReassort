@@ -24,9 +24,9 @@
 
 #### 
 ```
-conda install 
-
-
+conda create -n vreassort
+conda activate vreassort
+conda install dhcai21::vreassort
 ```
 
 
