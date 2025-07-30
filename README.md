@@ -2,6 +2,11 @@
 
 ### E-mail: dhcai2@cityu.edu.hk
 
+## Supporting Platfroms
+* Linux
+* Mac
+
+
 ## Installation
 ### Main Dependencies:
 * Conda
