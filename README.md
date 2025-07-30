@@ -22,7 +22,7 @@
 
 #### Installation via Conda
 
-(https://anaconda.org/dhcai21/vreassort/badges/version.svg)
+[![Anaconda-Server Badge](https://anaconda.org/dhcai21/vreassort/badges/version.svg)](https://anaconda.org/dhcai21/vreassort)
 #### 
 ```
 conda create -n vreassort
