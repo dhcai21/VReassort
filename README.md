@@ -46,15 +46,6 @@ chmod +x src/*
 #### Example
 `python src/main.py --input.csv --out result --thread 8`
 
-```
-result/
-├── fasta/
-├── feature/
-├── identification/
-├── name_mapping.csv
-└── tree/
-```
-
 ## Input
 Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
 > ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
@@ -69,6 +60,16 @@ Please use the file `input.csv` to indicate the segment names and the paths to t
 
 
 ## Output
+
+```
+result/
+├── fasta/
+├── feature/
+├── identification/
+├── name_mapping.csv
+└── tree/
+```
+
 
 #### Name Mapping
 To ensure consistency in sequence names across segments, we use pseudo-names (Code) to replace the original names of the segment sequences. The `name_mapping.csv` file provides the relevant information.
