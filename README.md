@@ -43,11 +43,23 @@ python src/main.py --
 
 
 
-## Output Example
 
+## Input
+Please use the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
+`Example (2 segments)`
+
+| Segment | Path              |
+|---------|-------------------|
+| HA      | data/seg4.fasta  |
+| NA      | data/seg6.fasta  |
+
+**Note:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
+
+## Output
 
 #### Name Mapping
 To ensure consistency in sequence names across segments, we use pseudo-names (Code) to replace the original names of the segment sequences. The `name_mapping.csv` file provides the relevant information.
+`Example`
 
 | Code | HA   | NA   |
 |------|------|------|
@@ -60,7 +72,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 
 
 #### Identification 
-
+`Example`
 `HA_NA_leaf.csv'
 | Score     | S1         | S2         | Name  |
 |-----------|------------|------------|-------|
@@ -72,6 +84,7 @@ To ensure consistency in sequence names across segments, we use pseudo-names (Co
 | 0.989963  | 0.979926   | 0.999999   | S98   |
 | ...       | ...        | ...        | ...   |
 
+`Example`
 `HA_NA_clade.csv`
 | Score      | S1         | S2         | Name   | Extra Info |
 |------------|------------|------------|--------|------------|
