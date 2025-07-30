@@ -35,7 +35,8 @@ conda install
 conda create -n vreassort python==3.10.18
 conda activate vreassort
 conda install -c bioconda mafft==7.525 trimal==1.5.0
-pip install torch==2.2.2 numpy==1.24.4 pandas==2.3.1 ete3==3.1.3 dendropy==5.0.1 Bio==1.8.0 scipy==1.10.1 tqdm==4.67.1
+conda install pytorch::pytorch
+pip install pandas==2.3.1 ete3==3.1.3 dendropy==5.0.1 Bio==1.8.0 scipy==1.10.1 tqdm==4.67.1
 
 git clone https://github.com/dhcai21/VReassort.git
 cd VReassort
