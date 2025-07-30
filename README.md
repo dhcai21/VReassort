@@ -20,4 +20,4 @@
 
 
 ## 📘&nbsp; License
-VReassort is released under the terms of the [GPL v3.0 License](https://github.com/dhcai2/VReassort?tab=GPL-3.0-1-ov-file).
+VReassort is released under the terms of the [GPL v3.0 License](https://github.com/dhcai21/VReassort?tab=GPL-3.0-1-ov-file).
