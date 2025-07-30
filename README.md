@@ -37,6 +37,56 @@ chmod +x src/*
 
 ```
 
+## Usage
+#### Example
+python src/main.py --
+
+
+
+## Output
+
+
+#### Name Mapping
+To ensure consistency in sequence names across segments, we use pseudo-names (Code) to replace the original names of the segment sequences. The `name_mapping.csv` file provides the relevant information.
+
+| Code | HA   | NA   |
+|------|------|------|
+| S1   | F0   | F0   |
+| S2   | F1   | F1   |
+| S3   | F2   | F2   |
+| S4   | F3   | F3   |
+| S5   | F4   | F4   |
+| ...  | ...  | ...  |
+
+
+#### Identification 
+
+{prefix}_leaf.csv
+| Score     | S1         | S2         | Name  |
+|-----------|------------|------------|-------|
+| 0.000439  | 0.000524   | 0.000354   | S103  |
+| 0.000613  | 0.000539   | 0.000686   | S112  |
+| 0.000439  | 0.000524   | 0.000354   | S51   |
+| 0.999999  | 0.999999   | 0.999999   | S82   |
+| 0.999999  | 0.999999   | 0.999999   | S83   |
+| 0.989963  | 0.979926   | 0.999999   | S98   |
+| ...       | ...        | ...        | ...   |
+
+{prefix}_clade.csv
+| Score      | S1         | S2         | Name   | Extra Info |
+|------------|------------|------------|--------|------------|
+| 0.00863296 | 0.00587875 | 0.01138717 | clade0 | ...        |
+| 0.06610173 | 0.10411298 | 0.02809048 | clade1 | ...        |
+| 0.02921185 | 0.05427545 | 0.00414825 | clade2 | ...        |
+| 0.01904643 | 0.01755518 | 0.02053767 | clade3 | ...        |
+| 0.00101161 | 0.00125027 | 0.00077295 | clade4 | ...        |
+| 0.02334884 | 0.03315961 | 0.01353806 | clade5 | ...        |
+| 0.00484115 | 0.00183183 | 0.00785047 | clade6 | ...        |
+| 0.02662343 | 0.02405226 | 0.02919459 | clade7 | ...        |
+| ...        | ...        | ...        | ...    | ...        |
+
+
+
 
 
 ## 📘&nbsp; License
