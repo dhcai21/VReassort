@@ -46,6 +46,9 @@ chmod +x src/*
 
 ## Usage
 #### Example
+set the threads
+`export OMP_NUM_THREADS=8`
+
 `python vreassort.py --input --input.csv --out result --thread 8`
 
 if you install VReassort via Conda, you may use:
