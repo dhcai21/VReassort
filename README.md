@@ -57,7 +57,7 @@ Please modify the file `input.csv` to indicate the segment names and the paths t
 
 `Example`
 
-| Segment | Path                  |
+| segment | path                  |
 |---------|-----------------------|
 | HA      | test_data/seg4.fasta  |
 | NA      | test_data/seg6.fasta  |
