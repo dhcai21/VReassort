@@ -207,8 +207,8 @@ python src/seg_clustering.py -i result_summary.csv -o cluster -tc 0.6 -tl 0.6 -j
 
 VReassort provides other components of the project:
 
-- [**Data Simulation & Tree Generation**](https://github.com/dhcai21/VReassort/wiki/Simulation-and-Tree-Generation)
-- [**Model Training Workflow**](https://github.com/dhcai21/VReassort/wiki/Model-Training)
+- [**Data Simulation & Tree Generation**](https://github.com/dhcai21/VReassort/wiki/Simulation%E2%80%90and%E2%80%90Tree%E2%80%90Generation)
+- [**Model Training Workflow**](https://github.com/dhcai21/VReassort/wiki/Model%E2%80%90Training)
 
 These modules generate synthetic training data, extract structural features, and train the neural network model (`trained.pt`) used by VReassort for reassortment detection.
 
