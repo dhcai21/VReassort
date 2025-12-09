@@ -261,7 +261,7 @@ def identify(config):
     out_clade = os.path.join(config.out, f"{config.prefix}_clade.csv")
     """ loading the trained model """
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    info = torch.load(ckpt_path, map_location=device)
+    info = torch.load(ckpt_path, map_location=device,weights_only=False)
     print("Running on:", device)
     network = info['network']
     model_parameter = info['model']
