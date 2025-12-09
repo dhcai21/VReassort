@@ -5,7 +5,7 @@
 
 ---
 
-VReassort is a bioinformatics tool designed to **identify viral reassortment events** from genome sequences or constructed phylogenetic trees.  
+VReassort is a bioinformatics tool designed to **identify viral reassortments** from genome sequences or constructed phylogenetic trees.  
 It utilizes tree-based analysis to reveal potential reassortment events across multiple genomic segments by pair-wise comparison.  
 The tool also supports data simulation and neural network model training workflows for advanced customization.
 
