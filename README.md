@@ -248,7 +248,7 @@ These parameters influence how branch lengths, normalization, and distance thres
 When analyzing **three or more segments**, cluster segments from the same origins based on the identification results by running:
 
 ```bash
-python src/seg_clustering.py -i result_multi/result_files.csv -o cluster -tc 0.6 -tl 0.6 -j 0.8 -dc -dl
+python seg_clustering.py -i result_multi/result_files.csv -o cluster -tc 0.6 -tl 0.6 -j 0.8 -dc -dl
 ```
 
 | Option | Description |
