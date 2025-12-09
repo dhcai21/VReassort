@@ -49,16 +49,17 @@ chmod +x src/*
 set the threads
 `export OMP_NUM_THREADS=8`
 
-`python vreassort.py --input --input.csv --out result --thread 8`
+`python vreassort.py --input --input_file/input_seq.csv --out result --type seq --thread 8`
 
 if you install VReassort via Conda, you may use:
 
-`vreassort --input --input.csv --out result --thread 8`
+`vreassort --input --input.csv --out result --type seq --thread 8`
+
+If you want to use built trees from other tools (e.g., IQ-Tree2) as input, please use the input file `input_file/input_tree.csv` and use `--type tree` in the command. 
+
 
 ## Input
 Please modify the input file `input_file/input_seq.csv` to indicate the segment names and the paths to the segment sequences. 
-
-If you want to use built trees from other tools (e.g., IQ-Tree2) as input, please use the input file `input_file/input_tree.csv` and use `--type tree` in the command. 
 
 `Example of input_seq.csv`
 
