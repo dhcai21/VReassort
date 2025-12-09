@@ -22,7 +22,8 @@ The tool also supports data simulation and neural network model training workflo
 * [FastTreeMP](https://morgannprice.github.io/fasttree/) == 2.1.11  
 * DendroPy == 5.0.1  
 * ETE3 == 3.1.3  
-* PyTorch  
+* PyTorch
+* networkx == 3.1
 
 ### Supporting Platforms
 
@@ -48,7 +49,7 @@ conda create -n vreassort python==3.10.18
 conda activate vreassort
 conda install -c bioconda mafft==7.525 trimal==1.5.0
 conda install pytorch::pytorch
-pip install numpy==1.26 pandas==2.3.1 ete3==3.1.3 dendropy==5.0.1 Bio==1.8.0 scipy==1.10.1 tqdm==4.67.1
+pip install numpy==1.26 pandas==2.3.1 ete3==3.1.3 dendropy==5.0.1 Bio==1.8.0 scipy==1.10.1 tqdm==4.67.1 networkx==3.1
 
 git clone https://github.com/dhcai21/VReassort.git
 cd VReassort
