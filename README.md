@@ -69,7 +69,7 @@ If you want to use built trees from other tools (e.g., IQ-Tree2) as input, pleas
 | ...     | ...                   |
 
 
-> ⚠️ **Important:**  If the names of segment sequences across the segment fasta files are inconsistent, VReassort will take sequences in the same order across segments as the same strains.
+> ⚠️ **Important:**  If the names of segment sequences across the segment FASTA files are inconsistent, VReassort will treat sequences in the same order across segments as belonging to the same strains.
 
 
 ```
