@@ -44,7 +44,7 @@ cd VReassort
 chmod +x src/*
 ```
 
-## Usage
+## Quick Usage
 #### Example
 set the threads
 `export OMP_NUM_THREADS=8`
@@ -57,6 +57,7 @@ if you install VReassort via Conda, you may use:
 
 If you want to use built trees from other tools (e.g., IQ-Tree2) as input, please use the input file `input_file/input_tree.csv` and use `--type tree` in the command. 
 
+For other optional parameters please see below, or use `python vreassort.py -h`
 
 ## Input
 Please modify the input file `input_file/input_seq.csv` to indicate the segment names and the paths to the segment sequences. 
