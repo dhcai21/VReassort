@@ -6,7 +6,7 @@
 ---
 
 VReassort is a bioinformatics tool designed to **identify viral reassortment events** from genome sequences or constructed phylogenetic trees.  
-It integrates sequence-based and tree-based analysis to reveal potential reassortment events across multiple genomic segments.  
+It utilizes tree-based analysis to reveal potential reassortment events across multiple genomic segments by pair-wise comparison.  
 The tool also supports data simulation and neural network model training workflows for advanced customization.
 
 ---
@@ -113,22 +113,43 @@ ACGTACTCTACGT
 
 ## Output
 
-All results are written to the specified output folder (e.g., `result/`):
+
+All results are written to the specified output folder (e.g., `result_multi/`):
 
 ```
-result/
+result_multi/
 ├── fasta/
 ├── feature/
 ├── identification/
 ├── name_mapping.csv
+├── result_files.csv
 └── tree/
 ```
 
-### Description of Key Outputs
+**Description:**
 
-- **name_mapping.csv** – maps pseudo‑names (codes) to original segment names.  
-- **identification/** – contains reassortment probability results for each segment pair.  
-- **tree/** – contains phylogenetic trees inferred or processed for each segment.
+- **`identification/`**  
+  Contains the reassortment **scores for each strain and clade** derived from the model’s predictions.  
+  Each file in this folder corresponds to a segment pair and lists the confidence or probability scores indicating potential reassortment events.
+
+- **`name_mapping.csv`**  
+  Records the mapping between the **original sequence names** and the **consistent internal names** used across all analysis outputs.  
+  This ensures sequence correspondence among different segments and standardizes identifiers within the results.
+
+- **`tree/`**
+  Contains phylogenetic trees for all segments.
+
+
+- **`result_files.csv`**  
+  Aggregates the reassortment identification results for **all segment pairs**.  
+  This file serves as a summary index for downstream analyses.  
+  You can use it directly to cluster segments based on reassortment patterns:
+
+  ```bash
+  python src/seg_clustering.py -i result_files.csv
+  ```
+
+  Running this command will **cluster related segments** (see the “Segment Clustering” section below).
 
 ---
 
@@ -176,15 +197,15 @@ python src/seg_clustering.py -i result_summary.csv -o cluster -tc 0.6 -tl 0.6 -j
 |---------|-------------|
 | `-i` | Input CSV file containing reassortment results (`result_summary.csv`). |
 | `-o` | Output prefix or path (default: `cluster`). |
-| `-tl`, `-tc` | Threshold values for leaf‑ and clade‑based clustering (default: 0.6). |
-| `-j` | Minimum Jaccard index (default: 0.8). |
+| `-tl`, `-tc` | Score thresholds for leaf‑ and clade‑based clustering (default: 0.6). |
+| `-j` | Minimum Jaccard index between clades (default: 0.8). |
 | `-dl`, `-dc` | Flags to perform leaf‑ or clade‑level clustering. |
 
 ---
 
 ## Related Workflows
 
-VReassort integrates seamlessly with other components of the project:
+VReassort provides other components of the project:
 
 - [**Data Simulation & Tree Generation**](https://github.com/dhcai21/VReassort/wiki/Simulation-and-Tree-Generation)
 - [**Model Training Workflow**](https://github.com/dhcai21/VReassort/wiki/Model-Training)
