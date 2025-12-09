@@ -60,7 +60,7 @@ Please modify the input file `input_file/input_seq.csv` to indicate the segment 
 
 If you want to use built trees from other tools (e.g., IQ-Tree2) as input, please use the input file `input_file/input_tree.csv` and use `--type tree` in the command. 
 
-`Example`
+`Example of input_seq.csv`
 
 | segment | path                  |
 |---------|-----------------------|
