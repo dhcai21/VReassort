@@ -212,7 +212,7 @@ These parameters influence how branch lengths, normalization, and distance thres
    - However, excessively low values may amplify noise in unstable short branches, increasing false positives.
 
 3. **Balance Factor (`B`)**  
-   - Adjusts the weighting between **node‑based** structural signals and **branch length distance** contributions.  
+   - Adjusts the **branch length distance** contributions.  
    - Setting a **larger `B`** increases sensitivity to changes in branch length, useful when branch length distances are reliable.  
    - Because short branches are often less stable, combining a **small `theta`** value with a **high `B`** value can also **increase false positives** (spurious reassortments).
 
