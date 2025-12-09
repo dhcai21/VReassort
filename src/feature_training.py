@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument("--output", type=str, default="train_feature.csv",
                         help="Output file name. (default: train_feature.csv)")
     parser.add_argument("--thread", type=int, default=8,
-                        help="Number of threads to use.")
+                        help="Number of threads to use (Default: 8).")
 
     # --- Processing parameters ---
     # ==== Feature parameters ====
