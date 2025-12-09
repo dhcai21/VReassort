@@ -56,13 +56,13 @@ export OMP_NUM_THREADS=8
 Run VReassort using segment sequence FASTA files specified in a CSV file:
 
 ```bash
-python vreassort.py --input input_file/input_seq.csv --out result --type seq --thread 8
+python vreassort.py --input input_file/input_seq.csv --out result_seq --type seq --thread 8
 ```
 
 If VReassort has been installed via Conda, you may also run:
 
 ```bash
-vreassort --input input.csv --out result --type seq --thread 8
+vreassort --input input.csv --out result_seq --type seq --thread 8
 ```
 
 ### Example 2 – Tree‑based Reassortment Detection
