@@ -74,16 +74,16 @@ If you want to use built trees from other tools (e.g., IQ-Tree2) as input, pleas
 
 ```
 **seg4.fasta**
->Strain1 | segment 4
+>Strain1
 ACGTATCTACGACGT 
->Strain2 | segment 4
+>Strain2
 ACGTACGTTCTACTC
 ...
 
 **seg6.fasta**
->Strain1 | segment 6
+>Strain1
 ACGTTCTACACGT
->Strain2 | segment 6
+>Strain2
 ACGTACTCTACGT
 ...
 ```
