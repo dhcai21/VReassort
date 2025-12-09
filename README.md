@@ -259,16 +259,17 @@ python src/seg_clustering.py -i result_multi/result_files.csv -o cluster -tc 0.6
 | `-j` | Minimum Jaccard index between clades (default: 0.8). |
 | `-dl`, `-dc` | Flags to perform leaf‑ or clade‑level clustering. |
 
-This will output the cluster patterns for each reassortments. 
+This command will output the cluster patterns for each reassortment:
 
-name	num	cluster
-S82	2	"seg4,seg2	||	seg3,seg1"
-S83	2	"seg4,seg2	||	seg3,seg1"
-S98	2	"seg4,seg2	||	seg3,seg1"
-S124	2	"seg4,seg2	||	seg3,seg1"
-S119	2	"seg4,seg2	||	seg3,seg1"
-S18	2	"seg4,seg2	||	seg3,seg1"
-
+```
+name    num    cluster
+S82     2      seg4,seg2 || seg3,seg1
+S83     2      seg4,seg2 || seg3,seg1
+S98     2      seg4,seg2 || seg3,seg1
+S124    2      seg4,seg2 || seg3,seg1
+S119    2      seg4,seg2 || seg3,seg1
+S18     2      seg4,seg2 || seg3,seg1
+```
 
 ---
 
