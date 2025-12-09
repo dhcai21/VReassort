@@ -184,7 +184,7 @@ usage: vreassort.py [-h] --input INPUT --type TYPE [--out OUT]
 | `--max_clade_diff` | Maximum strain difference allowed between clades (default: 10). |
 
 ---
-## Parameter Adjustment
+## Key Parameter Adjustment
 
 VReassort provides several tunable parameters for fine‑grained control of the reassortment detection process.  
 These parameters influence how branch lengths, normalization, and distance thresholds are interpreted during tree analysis.
