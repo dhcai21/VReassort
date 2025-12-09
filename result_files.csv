@@ -1,0 +1,7 @@
+segi,segj,leaf,clade
+seg1,seg2,result_multi/identification/seg1_seg2_leaf.csv,result_multi/identification/seg1_seg2_clade.csv
+seg1,seg3,result_multi/identification/seg1_seg3_leaf.csv,result_multi/identification/seg1_seg3_clade.csv
+seg1,seg4,result_multi/identification/seg1_seg4_leaf.csv,result_multi/identification/seg1_seg4_clade.csv
+seg2,seg3,result_multi/identification/seg2_seg3_leaf.csv,result_multi/identification/seg2_seg3_clade.csv
+seg2,seg4,result_multi/identification/seg2_seg4_leaf.csv,result_multi/identification/seg2_seg4_clade.csv
+seg3,seg4,result_multi/identification/seg3_seg4_leaf.csv,result_multi/identification/seg3_seg4_clade.csv
