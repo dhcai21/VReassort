@@ -1,0 +1,10 @@
+tree,num_reassort,start,repeats,min_size,max_size,min_dist,max_dist,output
+simulation/ha_tree/has1.treefile,1,1,100,1,10,0,0.2,simulation/train/has1
+simulation/ha_tree/has1.treefile,1,101,300,1,10,0.2,0.5,simulation/train/has1
+simulation/ha_tree/has1.treefile,1,401,100,1,10,0.5,1,simulation/train/has1
+simulation/ha_tree/has1.treefile,3,501,60,1,10,0,0.2,simulation/train/has1
+simulation/ha_tree/has1.treefile,3,561,180,1,10,0.2,0.5,simulation/train/has1
+simulation/ha_tree/has1.treefile,3,741,60,1,10,0.5,1,simulation/train/has1
+simulation/ha_tree/has1.treefile,5,801,40,1,10,0,0.2,simulation/train/has1
+simulation/ha_tree/has1.treefile,5,841,120,1,10,0.2,0.5,simulation/train/has1
+simulation/ha_tree/has1.treefile,5,961,40,1,10,0.5,1,simulation/train/has1

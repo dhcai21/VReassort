@@ -1,0 +1,3 @@
+tree,num_reassort,start,repeats,min_size,max_size,min_dist,max_dist,model,length,output
+simulation/ha_tree/h3n2_seg4.treefile,3,1,10,1,10,0,1,GTR+F+I+G4,1500,simulation/test
+simulation/ha_tree/h3n2_seg4.treefile,3,11,10,1,10,0,1,GTR+F+I+G4,1500,simulation/test
