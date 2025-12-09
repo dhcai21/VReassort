@@ -172,7 +172,7 @@ usage: vreassort.py [-h] --input INPUT --type TYPE [--out OUT]
 | `--out` | Output folder (default: `result`). |
 | `--model` | Path to the trained model file (default: `src/trained.pt`). |
 | `--thread` | Number of CPU threads. |
-| `--reshuffle` | Randomly reshuffle sequence order to introduce topology variation. |
+| `--reshuffle` | Randomly reshuffles the **sequence order** in each FASTA file so tree construction tool with huristic algorithm may generate **topological variations** on the same dataset. |
 | `--n_thres` | Minimum normalization boundary (default: 20). |
 | `--b_thres1` | Lower branch-length threshold (default: 0.0003). |
 | `--b_thres2` | Upper branch-length threshold (default: 0.001). |
