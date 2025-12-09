@@ -184,6 +184,70 @@ usage: vreassort.py [-h] --input INPUT --type TYPE [--out OUT]
 | `--max_clade_diff` | Maximum strain difference allowed between clades (default: 10). |
 
 ---
+## Parameter Adjustment
+
+VReassort provides several tunable parameters for fine‑grained control of the reassortment detection process.  
+These parameters influence how branch lengths, normalization, and distance thresholds are interpreted during tree analysis.
+
+| Parameter | Description | Default |
+|------------|--------------|----------|
+| `--n_thres N_THRES` | Minimum **normalization cap boundary**. Higher values increase robustness against noise in large, highly similar datasets by limiting the normalization range. | `20` |
+| `--b_thres1 B_THRES1` | **Lower branch collapsing threshold.** Branches shorter than this value are collapsed. | `0.0003` |
+| `--b_thres2 B_THRES2` | **Upper branch collapsing threshold.** Branches with lengths between `b_thres1` and `b_thres2` may be collapsed depending on balance and similarity configuration. | `0.001` |
+| `--theta THETA` | **Branch length distance threshold** used when calculating incremental branch length changes between strains. | `0.01` |
+| `--B B` | **Balance factor** that scales the contribution of branch length distance relative to node‑based components. Higher values make the model more sensitive to small changes in branch length. | `5` |
+
+### Practical Guidelines
+
+1. **Branch Collapsing (`b_thres1`, `b_thres2`)**  
+   - Branches shorter than `0.0003` are always collapsed.  
+   - Branches with lengths between `0.0003` and `0.001` may also be collapsed depending on the analysis mode.  
+   - If you intend to detect reassortment among **highly similar strains** (e.g., with > 99.5 % sequence identity), consider **decreasing** these thresholds.  
+   - Lower thresholds make the model more likely to preserve subtle short branches that could represent close parental lineages.  
+   - ⚠️ Lower thresholds also have a **higher risk of producing false reassortment events** due to unstable short branches.
+
+2. **Distance Increment Threshold (`theta`)**  
+   - Controls how many “increments” in branch length are considered when comparing two strains.  
+   - Smaller values make the model **more aggressive** in identifying potential reassortments among very similar strains (shorter evolutionary distances).  
+   - However, excessively low values may amplify noise in unstable short branches, increasing false positives.
+
+3. **Balance Factor (`B`)**  
+   - Adjusts the weighting between **node‑based** structural signals and **branch length distance** contributions.  
+   - Setting a **larger `B`** increases sensitivity to changes in branch length, useful when branch length distances are reliable.  
+   - Because short branches are often less stable, combining a **small `theta`** value with a **high `B`** value can also **increase false positives** (spurious reassortments).
+
+4. **Normalization Cap (`n_thres`)**  
+   - Defines the lower bound (or cap) used during normalization.  
+   - For large datasets (e.g., > 500 strains) with many highly similar sequences (> 99.5 % identity), increasing `n_thres` (e.g., 30 – 40) helps **reduce false reassortment calls** by dampening extreme normalization values.  
+   - A **smaller `n_thres`** retains sensitivity to reassortments involving closely related parental strains, but may increase the number of false positives.
+
+---
+
+### Recommended Strategy
+
+- **For typical datasets**  
+  (moderate size, sequence divergence > 0.5 %):  
+  Keep all default parameters.  
+  The default configuration balances accuracy and computational efficiency for most use cases.
+
+- **For large homogeneous datasets**  
+  (hundreds of near‑identical strains):  
+  Use the following adjusted setting to improve normalization and reduce false reassortments:
+
+  ```bash
+  --n_thres 40
+  ```
+
+- **For aggressively detecting reassortments with close parental strains**  
+  Use the following settings to increase sensitivity when identifying reassortments among very closely related strains:
+
+  ```bash
+  --b_thres1 0.0001 --b_thres2 0.0005 --theta 0.005 --B 10
+  ```
+
+  ⚠️ **Caution:** This configuration greatly increases sensitivity but may produce **many false (spurious) reassortment events**, especially when branch lengths are extremely short or unstable.
+  
+  This configuration enhances the detection of reassortment among highly similar strains while minimizing noise introduced by small branch‑length fluctuations.
 
 ## Segment Clustering (for Multi‑Segment Comparison)
 
