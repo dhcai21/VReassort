@@ -220,9 +220,3 @@ VReassort is distributed under the **[GPL v3.0 License](https://github.com/dhca
 © 2025 dhcai21 — City University of Hong Kong
 
 ---
-
-### References
-
-- **FastTree 2.2 – Approximately Maximum‑Likelihood Trees for Large Alignments:** [https://morgannprice.github.io/fasttree/](https://morgannprice.github.io/fasttree/)  
-- **ETE3 Toolkit – Analysis and Visualization of Phylogenetic Trees:** [http://etetoolkit.org/](http://etetoolkit.org/)  
-- **Anaconda Package – dhcai21/vreassort:** [https://anaconda.org/dhcai21/vreassort](https://anaconda.org/dhcai21/vreassort)
