@@ -42,7 +42,7 @@ conda install dhcai21::vreassort
 ```
 
 
-#### General installation
+### General installation
 ```
 conda create -n vreassort python==3.10.18
 conda activate vreassort
