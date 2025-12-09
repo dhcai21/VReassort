@@ -56,7 +56,7 @@ if you install VReassort via Conda, you may use:
 `vreassort --input --input.csv --out result --thread 8`
 
 ## Input
-Please modify the file `input.csv` to indicate the segment names and the paths to the segment sequences. 
+Please modify the input file `input_file/input_seq.csv` to indicate the segment names and the paths to the segment sequences. 
 
 `Example`
 
@@ -66,7 +66,11 @@ Please modify the file `input.csv` to indicate the segment names and the paths t
 | NA      | test_data/seg6.fasta  |
 | ...     | ...                   |
 
-> ⚠️ **Important:** Please ensure that the genome sequences are in the same order across segments in the FASTA file.
+
+> ⚠️ **Important:**  If the names of segment sequences across the segment fasta files are inconsistent, VReassort will take sequences in the same order across segments as the same strains.
+
+If you want to use built trees from other tools (e.g., IQ-Tree2) as input, please use the input file `input_file/input_tree.csv` and use `--type tree` in the command. 
+
 
 ```
 **seg4.fasta**
