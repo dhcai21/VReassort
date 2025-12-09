@@ -180,7 +180,7 @@ usage: vreassort.py [-h] --input INPUT --type TYPE [--out OUT]
 | `--B` | Balance factor for the branch-length component (default: 5). |
 | `--min_clade_size` | Minimum clade size (default: 5). |
 | `--max_clade_size` | Maximum clade size (default: 150). |
-| `--jd` | Minimum Jaccard index between clades (default: 0.8). |
+| `--jd` | Minimum Jaccard index of matching clades between segments (default: 0.8). |
 | `--max_clade_diff` | Maximum strain difference allowed between clades (default: 10). |
 
 ---
