@@ -221,33 +221,27 @@ These parameters influence how branch lengths, normalization, and distance thres
    - For large datasets (e.g., > 500 strains) with many highly similar sequences (> 99.5 % identity), increasing `n_thres` (e.g., 30 – 40) helps **reduce false reassortment calls** by dampening extreme normalization values.  
    - A **smaller `n_thres`** retains sensitivity to reassortments involving closely related parental strains, but may increase the number of false positives.
 
+
+### Reshuffle Option (for repeat runs)
+
+- **Purpose:**  
+  The `--reshuffle` parameter is used to **randomly reshuffle the order of sequences** in each FASTA file before tree construction.  
+  This can introduce minor **phylogenetic tree variations** when analyzing the same dataset multiple times.
+
+- **Effect on results:**  
+  - The reshuffling process **does not alter** the sequences themselves or their **matching across segments**.  
+  - Only the **sequence order within each FASTA file** is changed.  
+  - This randomness can help assess the **stability and reproducibility** of phylogenetic reconstructions across runs.
+
+- **Usage example:**
+
+  ```bash
+  --reshuffle
+  ```
+
+  When this option is enabled, the tool randomizes the order of sequences before generating trees.  
+  Results across reshuffled runs may show **minor differences** in the output scores due to random variations in tree topology.
 ---
-
-### Recommended Strategy
-
-- **For typical datasets**  
-  (moderate size, sequence divergence > 0.5 %):  
-  Keep all default parameters.  
-  The default configuration balances accuracy and computational efficiency for most use cases.
-
-- **For large homogeneous datasets**  
-  (hundreds of near‑identical strains):  
-  Use the following adjusted setting to improve normalization and reduce false reassortments:
-
-  ```bash
-  --n_thres 40
-  ```
-
-- **For aggressively detecting reassortments with close parental strains**  
-  Use the following settings to increase sensitivity when identifying reassortments among very closely related strains:
-
-  ```bash
-  --b_thres1 0.0001 --b_thres2 0.0005 --theta 0.005 --B 10
-  ```
-
-  ⚠️ **Caution:** This configuration greatly increases sensitivity but may produce **many false (spurious) reassortment events**, especially when branch lengths are extremely short or unstable.
-  
-  This configuration enhances the detection of reassortment among highly similar strains while minimizing noise introduced by small branch‑length fluctuations.
 
 ## Segment Clustering (for Multi‑Segment Comparison)
 
