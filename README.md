@@ -362,7 +362,7 @@ Calculate the normalized Robinson–Foulds (RF) distance to estimate phylogeneti
 ### Usage
 
 ```bash
-python data_quality.py -msa msa.fa
+python data_quality.py -msa test_data/msa.fa
 ```
 
 ### Arguments
