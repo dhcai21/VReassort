@@ -58,7 +58,71 @@ chmod +x src/*
 
 ---
 
-## Quick Start Example
+# VReassort
+
+Phylogeny-based detection of reassortment events across viral genomic segments.
+
+---
+
+## Components
+
+### 1. Reassortment Detection (Main Module)
+
+**Goal**  
+Identify reassortant strains between pairs of genomic segments.
+
+**Input**
+- Two segment sequence files containing the same set of strains, or  
+- Two phylogenetic trees corresponding to two segments  
+
+**Output**
+- A reassortment score for each strain or clade  
+
+---
+
+### 2. Segment Clustering (Supplementary Module 1)
+
+**Goal**  
+Determine which segments share the same evolutionary origin.
+
+**Input**
+- Pairwise reassortment detection results for three or more segments  
+
+**Output**
+- Segment clusters for each strain or clade  
+
+---
+
+### 3. Data Quality Assessment (Supplementary Module 2)
+
+**Goal**  
+Estimate the quality of input data to assess the reliability of reassortment inference.
+
+**Input**
+- A segment multiple sequence alignment (MSA)  
+
+**Method**
+- Randomly sample a subset of alignment columns (e.g., 80%)  
+- Reconstruct phylogenetic trees from the reduced MSAs  
+- Compute normalized Robinson–Foulds (RF) distances between trees  
+
+**Output**
+- A tree stability metric (normalized RF distance)  
+
+**Interpretation**
+- Low normalized RF distance indicates stable tree topology and reliable reassortment inference  
+- High normalized RF distance (e.g., > 0.5) suggests unstable tree topology and potentially reduced reliability  
+
+---
+
+## Recommended Workflow
+
+1. Run Reassortment Detection on pairs of segments  
+2. If analyzing three or more segments, run Segment Clustering  
+3. Run Data Quality Assessment to evaluate the expected reliability of the results
+
+
+## Quick Start Example of Reassortment Detection
 
 ### Example 1 – Sequence‑based Reassortment Detection
 
