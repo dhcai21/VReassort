@@ -368,14 +368,6 @@ The output is a normalized RF distance (ranging from 0 to 1), which serves as a 
 - Low normalized RF distance → stable tree topology → reliable results  
 - High normalized RF distance (e.g., > 0.5) → unstable tree topology → potentially reduced reliability  
 
-### Example
-
-Below is an example experiment conducted on datasets containing 156 strains. These datasets include varying levels of additional simulated error, resulting in different normalized RF distances.
-
-The figure illustrates the relationship between normalized RF distance and reassortment detection performance.
-
-![Data quality assessment example](figures/data_quality_example.png)
-
 ## Related Workflows
 
 VReassort provides other components of the project:
