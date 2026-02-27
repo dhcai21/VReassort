@@ -355,10 +355,26 @@ S18     2      seg4,seg2 || seg3,seg1
 ```
 
 ---
-
 ## Supplementary: Data Quality Assessment
 
+```bash
+python data_quality.py -i msa.fa
+```
 
+This command randomly samples subsets (e.g., 80%) of alignment columns from the input MSA, reconstructs phylogenetic trees from the reduced MSAs, and calculates the normalized Robinson–Foulds (RF) distance between the reconstructed trees.
+
+The output is a normalized RF distance (ranging from 0 to 1), which serves as a proxy for tree stability and expected reliability of reassortment inference.
+
+- Low normalized RF distance → stable tree topology → reliable results  
+- High normalized RF distance (e.g., > 0.5) → unstable tree topology → potentially reduced reliability  
+
+### Example
+
+Below is an example experiment conducted on datasets containing 156 strains. These datasets include varying levels of additional simulated error, resulting in different normalized RF distances.
+
+The figure illustrates the relationship between normalized RF distance and reassortment detection performance.
+
+![Data quality assessment example](figures/data_quality_example.png)
 
 ## Related Workflows
 
