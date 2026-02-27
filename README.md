@@ -122,7 +122,9 @@ Estimate the quality of input data to assess the reliability of reassortment inf
 3. Run Data Quality Assessment to evaluate the expected reliability of the results
 
 
-## Quick Start Example of Reassortment Detection
+## Main Module: 
+
+Quick Start Example of Reassortment Detection
 
 ### Example 1 – Sequence‑based Reassortment Detection
 
@@ -322,7 +324,9 @@ These parameters influence how branch lengths, normalization, and distance thres
   Results across reshuffled runs may show **minor differences** in the output scores due to random variations in tree topology.
 ---
 
-## Segment Clustering (for Multi‑Segment Comparison)
+## Supplementary: Clustering
+
+Segment Clustering (for Multi‑Segment Comparison)
 
 When analyzing **three or more segments**, cluster segments from the same origins based on the identification results by running:
 
@@ -351,6 +355,10 @@ S18     2      seg4,seg2 || seg3,seg1
 ```
 
 ---
+
+## Supplementary: Data Quality Estimation
+
+
 
 ## Related Workflows
 
