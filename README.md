@@ -356,7 +356,7 @@ S18     2      seg4,seg2 || seg3,seg1
 
 ---
 
-## Supplementary: Data Quality Estimation
+## Supplementary: Data Quality Assessment
 
 
 
