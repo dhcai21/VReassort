@@ -357,16 +357,41 @@ S18     2      seg4,seg2 || seg3,seg1
 ---
 ## Supplementary: Data Quality Assessment
 
+Calculate the normalized Robinson–Foulds (RF) distance to estimate phylogenetic tree stability from a given MSA.
+
+### Usage
+
 ```bash
-python data_quality.py -i msa.fa
+python data_quality.py -msa msa.fa
 ```
 
-This command randomly samples subsets (e.g., 80%) of alignment columns from the input MSA, reconstructs phylogenetic trees from the reduced MSAs, and calculates the normalized Robinson–Foulds (RF) distance between the reconstructed trees.
+### Arguments
 
-The output is a normalized RF distance (ranging from 0 to 1), which serves as a proxy for tree stability and expected reliability of reassortment inference.
+- `-msa MSA`  
+  Path to the input MSA file (FASTA format). **(Required)**
+
+- `-thread THREAD`  
+  Number of threads for FastTreeMP (default: 8).
+
+- `-fraction FRACTION`  
+  Fraction of alignment columns to subsample (default: 0.8).
+
+- `-n_reps N_REPS`  
+  Number of subsampling replicates (default: 5).
+
+- `-seed SEED`  
+  Random seed for reproducibility (default: 21).
+
+### Description
+
+This script randomly subsamples a fraction of alignment columns from the input MSA, reconstructs phylogenetic trees from the reduced MSAs using FastTreeMP, and calculates the normalized Robinson–Foulds (RF) distances among the reconstructed trees. The RF distances are normalized by the maximum possible RF distance.
+
+### Output
+
+The program outputs a normalized RF distance ranging from 0 to 1, which serves as a proxy for tree stability and the expected reliability of reassortment inference.
 
 - Low normalized RF distance → stable tree topology → reliable results  
-- High normalized RF distance (e.g., > 0.5) → unstable tree topology → potentially reduced reliability  
+- High normalized RF distance (e.g., > 0.5) → unstable tree topology → potentially reduced reliability
 
 ## Related Workflows
 
