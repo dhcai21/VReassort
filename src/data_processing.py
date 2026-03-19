@@ -116,6 +116,7 @@ def rename(args,name_flag,seg_name,head_all,seq_all):
                 head = mapping[head_all[i][j]]
                 seq = seq_all[i][j]
                 f.write(f">{head}\n{seq}\n")
+            f.close()
     else:
         print("Inconsistent: mapping by sequence orders")
         for i in range(seg_num):
@@ -129,6 +130,7 @@ def rename(args,name_flag,seg_name,head_all,seq_all):
                 head = f"S{j+1}"
                 seq = seq_all[i][j]
                 f.write(f">{head}\n{seq}\n")
+            f.close()
     """ save the mapping files """
     df_head = pd.DataFrame()
     df_head['Name'] = [f"S{i+1}" for i in range(seq_num)]
